@@ -73,15 +73,16 @@
   	
   	
 
-  	<section class="mainBanner">
+  	<section class="mainBanner" >
   		<div class="container">
         <div class="callToAction">
   				<p>Leve um pedacinho <br> <span>de natureza</span> para sua casa</p>
-          <a class="btn btn-default" href="#produtos">Conheça nossos produtos</a>
+          <a class="btn btn-default" href="#anchorProdutos">Conheça nossos produtos</a>
   		</div><!--container-->
   	</section>
 
     <section class="secProdutos">
+      <span class="anchor" id="anchorProdutos"></span>
       <div class="container-fluid">
         <div class="row">
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
@@ -191,6 +192,42 @@ Acreditamos na preservação e cuidado com a natureza, como forma de preservarmo
     <script type="text/javascript" src="js/jquery.stellar.js"></script>
     <script type="text/javascript">
       $.stellar();
+    </script>
+
+    <!-- //Scroll suave// -->
+    <script type="text/javascript" src="js/jquery.scrollspeed.js"></script>
+    <script type="text/javascript">
+      jQuery.scrollSpeed(100, 800);
+    </script> 
+    
+    <!-- //Âncoras// -->
+    <script type="text/javascript">
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script> 
+
+    <script type="text/javascript">
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            $(".navbar-default").addClass("darkHeader");
+        } else {
+            $(".navbar-default").removeClass("darkHeader");
+        }
+      });
     </script>
     
   </body>
