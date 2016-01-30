@@ -25,36 +25,59 @@
   </head>
   <body>
 
-  	<header class="header">
-  		<div class="container">
+    <header class="header">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Menu</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1 class="logoMenu"><a href="#">Barreto's Plantas</a></h1>
+          </div>
 
-        <h1><a href="index.php"><span>Barretos Plantas</span></a></h1>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Terrários</a></li>
+                  <li><a href="#">Acessórios</a></li>
+                  <li><a href="#">Decoração</a></li>                
+                  <li><a href="#">Arranjos</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+              <!--<ul class="nav navbar-nav navbar-right socialIcons">
+                <li><a href="https://www.facebook.com/barretosplantas/" target="_BLANK">Facebook</a></li>
+                <li><a href="https://www.instagram.com/barretosplantas/" target="_BLANK">Instagram</a></li>
+              </ul><!-- socialIcons -->
+            </ul>
+            <!-- //Redes Sociais// -->
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+    </header>
 
-        <nav class="menu">
-          <span class="navToogle">Menu</span>
-          <ul>
-            <li><a href="index.php">Home</li>
-            <li><a href="index.php">Produtos</li>
-            <li><a href="index.php">Serviços</li>
-            <li><a href="index.php">Sobre</li>
-            <li><a href="index.php">Contato</li>
-          </ul>
-        </nav>
 
-        <!-- //Redes Sociais// -->
-        <ul class="socialIcons">
-          <li><a href="https://www.facebook.com/barretosplantas/" target="_BLANK">Facebook</a></li>
-          <li><a href="https://www.instagram.com/barretosplantas/" target="_BLANK">Instagram</a></li>
-        </ul>
-  			
-  		</div><!--container-->
-  	</header>
+  	
+
+  	
   	
 
   	<section class="mainBanner">
   		<div class="container">
-  			<h1>Barreto's Plantas</h1>
-  			<p class="chamada">Leve um pedacinho <br> <span>de natureza</span> para sua casa</p>
+        <div class="callToAction">
+  				<p>Leve um pedacinho <br> <span>de natureza</span> para sua casa</p>
+          <a class="btn btn-default" href="#produtos">Conheça nossos produtos</a>
   		</div><!--container-->
   	</section>
 
