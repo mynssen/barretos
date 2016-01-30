@@ -1,0 +1,305 @@
+/* //Variáveis// */
+$mainColor: #95c5a0; /* Verde claro */
+$darkMainColor: #698f75; /* Verde escuro */
+$subColor:#ffe400; /* Amarelo */
+$customFont:'Amatic SC', cursive;
+
+/* //Placeholders// */
+%titles {
+	font-family: $customFont;
+	font-size:36px;
+	line-height: 1em;
+}
+
+%transitionDefault {
+	-moz-transition: all .25s ease-out;
+	-webkit-transition: all .25s ease-out;
+	transition: all .25s ease-out;
+}
+
+@mixin transitionCustom ($time:.25s, $type:linear) {
+	-moz-transition: all $time $type;
+	-webkit-transition: all $time $type;
+	transition: all $time $type;
+}
+
+%imageReplacement {
+	overflow: hidden;
+	text-indent: -99999px;
+}
+
+%circle {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+body { 
+	color: #fff; 
+	font-size: 10px;
+}
+
+/* //Tipografia// */
+h1, h2 { @extend %titles; }
+p { font-size: 1.6em; }
+
+.btn-default {
+	color: #fff;
+	font-family: $customFont;
+	font-size: 3em;
+	background: $mainColor;
+	border: none;
+	border-bottom: 3px solid $darkMainColor;
+	@extend %transitionDefault;
+
+	&:hover {
+		background: $darkMainColor;
+		border-color: $darkMainColor;
+		color: #fff;
+	}
+}
+
+p + .btn-default { margin-top: 10px; }
+
+
+
+
+.header {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background:rgba(0,0,0,.5);
+	
+	.container {
+		position: relative;
+	}
+
+} /*header*/
+
+.menu {
+
+	.navToogle {
+		color: #fff;
+		cursor: pointer;
+		font-family: $customFont;
+		font-size: 36px;
+		@extend %transitionDefault;
+		
+		&:hover{
+			color: $mainColor;
+		}
+	}
+	
+	ul {
+		display: none;
+		list-style: none; 
+		padding: 0;
+
+		li {
+			float: left;
+			margin-right: 10px;
+		}
+
+	} /*ul*/
+
+} /*menu*/
+
+.mainBanner {
+
+	background: $darkMainColor url(../img/blurForest.jpg) center center no-repeat;
+	background-size: auto 100%;
+	border-bottom: 4px solid $mainColor;
+	height: 100vh;
+	min-height: 700px;
+
+
+
+	.container {
+		padding: 100px 0;
+		height: 100%;
+	}
+
+	h1 {
+		background: url(../img/logo.jpg) center center no-repeat;
+		@extend %imageReplacement;
+		@extend %circle;
+		height: 269px;
+		width: 269px;
+		position: relative;
+		margin: 0 auto 100px;
+		-moz-box-shadow: 20px 20px 20px rgba(0,0,0,.8);
+		-webkit-box-shadow: 20px 20px 20px rgba(0,0,0,.8);
+		box-shadow: 20px 20px 20px rgba(0,0,0,.8);
+	}
+
+	p {
+		
+		font-family: $customFont;
+		font-size: 80px;
+		line-height: 1em;
+		position: relative;
+		text-align: center;
+
+		span { color: $subColor; }
+	}
+
+ 
+}
+
+
+.secProdutos {
+
+	background: #fff;
+
+	
+	.boxProduto {
+		padding: 0;
+		position: relative;
+
+		a { 
+			color: #fff;
+			background: #000;
+			display: block;
+			position: relative;
+			overflow: hidden;
+			@extend %transitionDefault;
+
+			&:hover {
+				//opacity: .9;
+				//filter:alpha(opacity=90);
+				
+				img { 
+					transform: scale(1.1,1.1);				
+					z-index: 9;
+					opacity: .6;
+					filter:alpha(opacity=60);
+					
+				}
+			}
+		}
+
+		img {
+			@include transitionCustom(1s);
+		}
+
+		p {
+			@extend %titles;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			margin-bottom: 0;
+			padding: 5px 0;
+			text-align: center;
+			background:rgba($mainColor,.9);
+		}
+
+		&:nth-child(even) p {
+			background-color: rgba($darkMainColor,.9);
+		}
+	
+	}
+}
+
+
+.secServicos {
+	background: #222 url(../img/bgServicos.jpg) no-repeat center center;
+	position: relative;
+
+	&:after {
+		content:"";
+		display: block;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: #f00; 
+	}
+
+	@media (max-width:992px) {
+		background-position: left top;
+		border-bottom: 4px solid $mainColor;
+	}
+
+	
+}
+
+.secSobre {
+	background: #222 url(../img/bgSobre.jpg) no-repeat center center;
+	position: relative;
+
+	&:after {
+		content:"";
+		display: block;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #f00; 
+	}
+
+	@media (max-width:992px) {
+		background-position: left top;
+		border-bottom: 4px solid $mainColor;
+	}
+
+}
+
+.secServicos, .secSobre {
+
+	.boxTexto {
+		padding: 80px 0;
+		/*background: #222 url(../img/bgServicosDark.jpg) no-repeat left center;*/
+
+		h2 {
+			color: $mainColor;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+	}
+}
+
+
+.secInstagram {
+	padding: 50px 0;
+
+	h1 {
+		color: $mainColor;
+		text-align: center;
+
+	}
+}
+
+#instafeed a { 
+	display:block; 
+	float:left; 
+	width:23%;
+	margin: 1%;
+	height: 200px;
+	
+	overflow: hidden;
+	@extend %transitionDefault;
+
+	&:hover { 
+		opacity:.7; 
+		filter:alpha(opacity=70); 
+		zoom:1;
+	}
+
+	img { 
+		display:block;
+		min-height: 100%;
+		width:100%;
+
+		@media (max-width: 920px) {
+
+		}
+	}
+}

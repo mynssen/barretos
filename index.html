@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Barreto's Plantas</title>
+
+    <!-- //Bootstrap// -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- //Google Fonts: Amatic SC// -->
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- //Estilo// -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  	<header class="header">
+  		<div class="container">
+
+        <h1><a href="index.php"><span>Barretos Plantas</span></a></h1>
+
+        <nav class="menu">
+          <span class="navToogle">Menu</span>
+          <ul>
+            <li><a href="index.php">Home</li>
+            <li><a href="index.php">Produtos</li>
+            <li><a href="index.php">Serviços</li>
+            <li><a href="index.php">Sobre</li>
+            <li><a href="index.php">Contato</li>
+          </ul>
+        </nav>
+
+        <!-- //Redes Sociais// -->
+        <ul class="socialIcons">
+          <li><a href="https://www.facebook.com/barretosplantas/" target="_BLANK">Facebook</a></li>
+          <li><a href="https://www.instagram.com/barretosplantas/" target="_BLANK">Instagram</a></li>
+        </ul>
+  			
+  		</div><!--container-->
+  	</header>
+  	
+
+  	<section class="mainBanner">
+  		<div class="container">
+  			<h1>Barreto's Plantas</h1>
+  			<p class="chamada">Leve um pedacinho <br> <span>de natureza</span> para sua casa</p>
+  		</div><!--container-->
+  	</section>
+
+    <section class="secProdutos">
+      <div class="container-fluid">
+        <div class="row">
+          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
+            <a href="terrarios.php">
+              <img class="img-responsive" src="img/destaqueTerrarios.jpg" alt="Terrários">
+              <p>Terrários</p>
+            </a>
+          </article>
+          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
+            <a href="terrarios.php">
+              <img class="img-responsive" src="img/destaqueAcessorios.jpg" alt="Acessórios">
+              <p>Acessórios</p>
+            </a>
+          </article>
+          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
+            <a href="terrarios.php">
+              <img class="img-responsive" src="img/destaqueDecoracao.jpg" alt="Decoração">
+              <p>Decoração</p>
+            </a>
+          </article>
+          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
+            <a href="terrarios.php">
+              <img class="img-responsive" src="img/destaqueArranjos.jpg" alt="Arranjos">
+              <p>Arranjos</p>
+            </a>
+          </article>
+
+        </div><!--row-->
+      </div><!--container-fluid-->
+    </section>
+
+
+    <section class="secServicos">
+      
+      <article class="boxTexto">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <h2>Paisagismo</h2>
+              <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos. Atendemos a pedidos de empresas e particulares.</p>            
+              <h2>Decoração floral</h2>
+              <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais.</p>
+              <a class="btn btn-default">Saiba mais <span class="hidden-xs">sobre nossos serviços</span></a>
+            </div><!--col-->
+          </div><!--row-->
+        </div><!--container-->
+      </article>
+
+    </section>    
+
+
+   <section class="secSobre">
+      
+      <article class="boxTexto">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-sm-12">
+              <h2>A Barreto's Plantas</h2>
+              <p>Somos uma empresa atuante no mercado verde. 
+Acreditamos na preservação e cuidado com a natureza, como forma de preservarmos a vida como um todo. </p>
+              <a class="btn btn-default">Conheça nossa história</a>
+            </div><!--col-->
+          </div><!--row-->
+        </div><!--container-->
+      </article>
+
+    </section>        
+
+    
+    <section class="secInstagram">
+      <div class="container">
+        <h1>Siga nosso Instagram</h1>
+        <div id="instafeed" class="clearfix"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+
+
+        </div><!--row-->
+      </div><!--container-->
+    </footer>    
+
+
+    <!-- //jQuery// -->
+    <script src="js/jquery.min.js"></script>
+    <!-- //Bootstrap// -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- //Instagram// -->
+    <script type="text/javascript" src="js/instafeed.min.js"></script>   
+    <script type="text/javascript">
+        var feed = new Instafeed({
+          get: 'user',
+          userId: '1395115652',
+          accessToken: '1395115652.97584da.052c08a6dc0a4b2ca21f6d193395ce61',
+          limit: 8,
+          resolution: 'standard_resolution',
+          template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+        });
+        feed.run();
+    </script>
+
+    <!-- //Parallax// -->
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <script type="text/javascript">
+      $.stellar();
+    </script>
+    
+  </body>
+</html>
