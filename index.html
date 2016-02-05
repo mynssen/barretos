@@ -10,8 +10,9 @@
     <!-- //Bootstrap// -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- //Google Fonts: Amatic SC// -->
+    <!-- //Google Fonts: Amatic SC & Open Sans// -->
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <!-- //Estilo// -->
     <link href="css/style.css" rel="stylesheet">
@@ -53,6 +54,7 @@
                 </ul>
               </li>
               <li><a href="#">Serviços</a></li>
+              <li><a href="#">Portfólio</a></li>
               <li><a href="#">Sobre</a></li>
               <li><a href="#">Contato</a></li>
               <!--<ul class="nav navbar-nav navbar-right socialIcons">
@@ -73,13 +75,16 @@
   	
   	
 
-  	<section class="mainBanner" >
+  	<section class="mainBanner">
   		<div class="container">
         <div class="callToAction">
   				<p>Leve um pedacinho <br> <span>de natureza</span> para sua casa</p>
           <a class="btn btn-default" href="#anchorProdutos">Conheça nossos produtos</a>
+        </div><!--callToAction-->
   		</div><!--container-->
   	</section>
+
+    <div class="styledBorder"></div>
 
     <section class="secProdutos">
       <span class="anchor" id="anchorProdutos"></span>
@@ -115,56 +120,180 @@
     </section>
 
 
-    <section class="secServicos">
-      
-      <article class="boxTexto">
+    <div class="darkBg">
+
+      <section class="secServicos">
+        
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-12">
-              <h2>Paisagismo</h2>
-              <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos. Atendemos a pedidos de empresas e particulares.</p>            
-              <h2>Decoração floral</h2>
-              <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais.</p>
-              <a class="btn btn-default">Saiba mais <span class="hidden-xs">sobre nossos serviços</span></a>
+
+              <article class="boxTexto">
+                <h2>Paisagismo</h2>
+                <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos. Atendemos a pedidos de empresas e particulares.</p>            
+                <h2>Decoração floral</h2>
+                <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais.</p>
+                <a class="btn btn-default">Saiba mais <span class="hidden-xs">sobre nossos serviços</span></a>
+              </article>
+
             </div><!--col-->
           </div><!--row-->
         </div><!--container-->
-      </article>
 
-    </section>    
+      </section>    
 
 
-   <section class="secSobre">
-      
-      <article class="boxTexto">
+      <section class="secSobre">        
+          
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-6 col-sm-12">
-              <h2>A Barreto's Plantas</h2>
-              <p>Somos uma empresa atuante no mercado verde. 
-Acreditamos na preservação e cuidado com a natureza, como forma de preservarmos a vida como um todo. </p>
-              <a class="btn btn-default">Conheça nossa história</a>
+
+              <article class="boxTexto">
+                <h2>A Barreto's Plantas</h2>
+                <p>Somos uma empresa atuante no mercado verde. 
+  Acreditamos na preservação e cuidado com a natureza, como forma de preservarmos a vida como um todo. </p>
+                <a class="btn btn-default">Conheça nossa história</a>
+              </article>
+            
             </div><!--col-->
           </div><!--row-->
         </div><!--container-->
-      </article>
 
-    </section>        
+      </section>
+
+    </div><!--darkBg-->
+
+    <div class="styledBorder"></div>
 
     
-    <section class="secInstagram">
+    <section class="secPortfolio">
       <div class="container">
-        <h1>Siga nosso Instagram</h1>
-        <div id="instafeed" class="clearfix"></div>
-      </div>
+
+        <h1>Portfólio</h1>
+
+        <div class="controls mixControls">
+          
+          <button class="filter btn btn-default" data-filter="all">Tudo</button>
+          <button class="filter btn btn-default" data-filter=".mixTerrarios">Terrários</button>
+          <button class="filter btn btn-default" data-filter=".mixAcessorios">Acessórios</button>
+          <button class="filter btn btn-default" data-filter=".mixArranjos">Arranjos</button>
+          <button class="filter btn btn-default" data-filter=".mixPaisagismo">Paisagismo</button>
+          <button class="filter btn btn-default" data-filter=".mixDecoracao">Decoração</button>
+
+        </div>
+
+        <div id="mixitup" class="mixitup">
+          <div class="mix mixTerrarios" data-myorder="1">mixTerrarios</div>
+          <div class="mix mixPaisagismo" data-myorder="2">mixPaisagismo</div>
+          <div class="mix mixAcessorios" data-myorder="3">mixAcessorios</div>
+          <div class="mix mixAcessorios" data-myorder="4">mixAcessorios</div>
+          <div class="mix mixTerrarios" data-myorder="5">mixTerrarios</div>
+          <div class="mix mixTerrarios" data-myorder="6">mixTerrarios</div>
+          <div class="mix mixArranjos" data-myorder="7">mixArranjos</div>
+          <div class="mix mixDecoracao" data-myorder="9">mixDecoracao</div>
+          <div class="gap"></div>
+          <div class="gap"></div>
+        </div>
+
+      </div><!--container-->
     </section>
 
-    <footer class="footer">
+    <section class="secDepoimentos">
+      <div class="container">
+
+        <h1>Depoimentos</h1>
+        <blockquote>
+          <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
+        </blockquote>
+
+      </div><!--container-->
+    </section>    
+
+    <section class="secSocial">
       <div class="container">
         <div class="row">
 
+            <div class="col-md-4"><h1>Siga-nos</h1></div>
+            <div class="col-md-4"><p>@barretosplantas</p></div>
+            <div class="col-md-4"><p>/barretosplantas</p></div>
 
         </div><!--row-->
+      </div><!--container-->
+    </section>
+
+
+
+    <!--<section class="secInstagram">
+      <div class="container">
+        <h1>Siga nosso Instagram</h1>
+        <div id="instafeed" class="clearfix"></div>
+      </div><!--container-->
+    <!--</section>-->
+
+    <div class="styledBorder"></div>
+
+    <section class="contato">
+
+      <div class="container">
+        <div class="row">
+          
+          <div class="formContato col-md-6">
+            
+            <h1>Entre em contato</h1>
+            <p>Gostou de nossos produtos? Quer solicitar um orçamento, tirar alguma dúvida ou só mandar um alô? Envie uma mensagem pra gente!</p>
+
+            <form>
+              <div class="row">
+
+              <div class="form-group col-sm-12">
+                  <label for="nome">Nome</label>
+                  <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone. Ex: 21999999999" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="email">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail. Ex: seuemail@email.com" required>
+                </div>
+                <div class="form-group col-sm-12">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea rows="4" class="form-control" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                  <button type="submit" class="btn btn-default">Enviar</button>
+                </div>
+              </div><!--row-->
+            </form>
+
+          </div><!--col-->
+
+          <div class="col-md-6">
+            <article class="boxContatos">
+              
+              <h2>Telefone</h2>
+              <p>(21) 99857.6746 | (21) 99919.3180</p>
+              <p>(21) 3332.7983 | (21) 3164.2803</p>
+
+              <h2>E-mail</h2>
+              <p>contato@barretosplantas.com.br</p>
+
+              <h2>Horário de atendimento</h2>
+              <p>De segunda à sexta, de 9:00 as 18:00</p>
+
+            </article>
+          </div><!--col-->
+
+        </div><!--row-->
+      </div><!--container-->
+    </section><!--contato-->     
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>Barreto's Plantas 2016 | Todos os direitos reservados.</p>
       </div><!--container-->
     </footer>    
 
@@ -174,19 +303,7 @@ Acreditamos na preservação e cuidado com a natureza, como forma de preservarmo
     <!-- //Bootstrap// -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- //Instagram// -->
-    <script type="text/javascript" src="js/instafeed.min.js"></script>   
-    <script type="text/javascript">
-        var feed = new Instafeed({
-          get: 'user',
-          userId: '1395115652',
-          accessToken: '1395115652.97584da.052c08a6dc0a4b2ca21f6d193395ce61',
-          limit: 8,
-          resolution: 'standard_resolution',
-          template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
-        });
-        feed.run();
-    </script>
+    
 
     <!-- //Parallax// -->
     <script type="text/javascript" src="js/jquery.stellar.js"></script>
@@ -229,6 +346,16 @@ Acreditamos na preservação e cuidado com a natureza, como forma de preservarmo
         }
       });
     </script>
+
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('#mixitup').mixItUp();
+      });
+    </script>
+
+
+    
     
   </body>
 </html>

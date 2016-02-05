@@ -3,11 +3,12 @@ $mainColor: #95c5a0; /* Verde claro */
 $darkMainColor: #698f75; /* Verde escuro */
 $subColor:#ffe400; /* Amarelo */
 $customFont:'Amatic SC', cursive;
+$paddingSec: 80px;
 
 /* //Placeholders// */
 %titles {
 	font-family: $customFont;
-	font-size:36px;
+	font-size:4.6em;
 	line-height: 1em;
 }
 
@@ -33,14 +34,27 @@ $customFont:'Amatic SC', cursive;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
+%paddingSection {
+	padding-top: $paddingSec;
+	padding-bottom: $paddingSec;
+}
+
 
 body { 
 	color: #fff; 
 	font-size: 10px;
+	font-family:"Open Sans", "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 /* //Tipografia// */
-h1, h2 { @extend %titles; }
+h1, h2 { 
+	@extend %titles; 
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
 p { font-size: 1.6em; }
 
 .btn-default {
@@ -50,17 +64,47 @@ p { font-size: 1.6em; }
 	background: none;
 	border: 2px solid #fff;
 	padding: 6px 20px;
+	border-radius: 0;
 	@extend %transitionDefault;
 
-	&:hover, &:focus {
+	&:hover, &:focus, &.active, &.active:hover, &.active:focus {
 		background: #fff;
 		border-color: #fff;
 		color: $mainColor;
+		box-shadow: none;
+		outline: 0;
+	}
+
+	&.btn-color {
+		color: $mainColor;
+		border-color: $mainColor;
+
+		&:hover, &:focus {
+			background: $mainColor;
+			border-color: $mainColor;
+			color: #fff;
+		}
 	}
 }
 
-p + .btn-default { margin-top: 10px; }
+p + .btn-default { margin-top: 30px; }
+label {
+	@extend %titles;
+	font-size: 3em;
+}
+.form-control {
+	border: none;
+	border-radius: 0;
+	height: 40px;
+}
 
+blockquote p {
+	font-size: 1em;
+	font-style: italic;
+}
+
+
+/* //Base Style// */
 .anchor { 
 	position: absolute;
 	top: -70px;
@@ -111,13 +155,10 @@ p + .btn-default { margin-top: 10px; }
 
 .mainBanner {
 
-	background: $darkMainColor url(../img/blurForest.jpg) no-repeat center center;
-	background-size: auto 100%;
-	border-bottom: 4px solid $mainColor;
+	background: $darkMainColor url(../img/bgTerrarios.jpg) no-repeat center center;
+	background-size: cover;
 	height: 100vh;
 	min-height: 700px;
-
-
 
 	.container {
 		padding: 100px 0;
@@ -128,13 +169,14 @@ p + .btn-default { margin-top: 10px; }
 		position: absolute;
 		top: 50%;
 		margin-top: -100px;
+		z-index: 2;
 
 		p {
 		
-		font-family: $customFont;
-		font-size: 80px;
-		line-height: 1em;
-		position: relative;
+			font-family: $customFont;
+			font-size: 8em;
+			line-height: 1em;
+			position: relative;
 		
 
 			span { color: $subColor; }
@@ -184,11 +226,12 @@ p + .btn-default { margin-top: 10px; }
 		}
 
 		img {
-			@include transitionCustom(1s);
+			@include transitionCustom(.8s);
 		}
 
 		p {
 			@extend %titles;
+			font-size: 3.6em;
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -206,9 +249,31 @@ p + .btn-default { margin-top: 10px; }
 	}
 }
 
+.darkBg {
+	background: #222 url(../img/bgDarkWood.jpg) no-repeat center center; 
+}
+.styledBorder {
+	background: $mainColor;
+	height: 4px;
+	position: relative;
+
+	&:after {
+		content: "";
+		border-top:14px solid $mainColor;
+		border-left:14px solid transparent;
+		border-right:14px solid transparent;
+		height: 0;
+		width: 0;
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 4px;
+		margin-left: -14px;
+		z-index: 3;
+	}
+}
 
 .secServicos {
-	background: #222 url(../img/bgServicos.jpg) no-repeat center center;
 	position: relative;
 
 	&:after {
@@ -219,19 +284,15 @@ p + .btn-default { margin-top: 10px; }
 		position: absolute;
 		right: 0;
 		top: 0;
-		background: #f00; 
-	}
+		background: #222 url(../img/bgServicos.jpg) no-repeat center center; 
 
-	@media (max-width:992px) {
-		background-position: left top;
-		border-bottom: 4px solid $mainColor;
+		@media (max-width:992px) {		
+			display: none;
+		}
 	}
-
-	
 }
 
 .secSobre {
-	background: #222 url(../img/bgSobre.jpg) no-repeat center center;
 	position: relative;
 
 	&:after {
@@ -242,39 +303,97 @@ p + .btn-default { margin-top: 10px; }
 		position: absolute;
 		left: 0;
 		top: 0;
-		background: #f00; 
-	}
+		background: #222 url(../img/bgSobre.jpg) no-repeat center center;
 
-	@media (max-width:992px) {
-		background-position: left top;
-		border-bottom: 4px solid $mainColor;
+		@media (max-width:992px) {
+			display: none;
+		}
 	}
-
 }
 
 .secServicos, .secSobre {
 
 	.boxTexto {
-		padding: 80px 0;
-		/*background: #222 url(../img/bgServicosDark.jpg) no-repeat left center;*/
+		
+		@extend %paddingSection;
+		padding-left: 30px;
+		padding-right: 30px;
+		
 
 		h2 {
 			color: $mainColor;
-
-			&:first-child {
-				margin-top: 0;
-			}
 		}
 
 	}
 }
 
 
+.secPortfolio{
+	background: $darkMainColor url(../img/blurForest.jpg) no-repeat center center;
+	background-size:cover;
+	@extend %paddingSection;
+	text-align: center;	
+}
+
+.secDepoimentos{
+	@extend .secPortfolio;
+	background: #f2f2f2;
+
+	h1 { color: $mainColor; margin-bottom: 40px; }
+
+	blockquote { 
+		position: relative;
+		border: none;
+		z-index: 2;
+		padding: 0 200px;
+		color: #999;
+	
+		&:before, &:after {
+			color: #ddd;
+			display: block;
+			position: absolute;
+			top: 60px;
+			left: 50px;
+			content: open-quote;
+			quotes: "\201C""\201D""\2018""\2019";
+			font-family: arial;
+			line-height: 0;
+			transform: rotate(30deg);
+			font-size:15em;
+			z-index: -1;
+			
+		}
+		&:after {	
+			content: close-quote;		
+			top: auto;
+			left: auto;
+			right: 120px;			
+			bottom: 0;
+			margin-bottom: -50px;
+		}
+	}
+	
+}
+
+.secSocial{
+	background: $mainColor;
+	padding: 30px 0;
+	text-align: center;
+	position: relative;
+
+	h1 { position: relative; }
+
+	p {
+		@extend %titles;
+		font-size: 3.6em;
+	}
+}
+
 .secInstagram {
-	padding: 50px 0;
+	background: $mainColor url(../img/bgWood.jpg) no-repeat center top;
+	@extend %paddingSection;
 
 	h1 {
-		color: $mainColor;
 		text-align: center;
 
 	}
@@ -283,8 +402,8 @@ p + .btn-default { margin-top: 10px; }
 #instafeed a { 
 	display:block; 
 	float:left; 
-	width:23%;
-	margin: 1%;
+	width:12.5%;
+	//margin: 1%;
 	height: 200px;
 	
 	overflow: hidden;
@@ -305,4 +424,99 @@ p + .btn-default { margin-top: 10px; }
 
 		}
 	}
+}
+
+
+.contato {
+	@extend .darkBg;
+	
+	>.container {
+		@extend %paddingSection;
+	}
+
+	h1, label {
+		color: $mainColor;
+	}
+	form {
+		margin-top: 30px;
+	}
+}
+
+.boxContatos {
+
+	background: rgba(0,0,0,.5) url(../img/letter.png) no-repeat right bottom;
+	padding: 30px;
+	margin-top: 60px;
+
+	h2 {
+		font-size: 3em;
+		color: $mainColor;
+		margin-top: 20px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	p {
+		font-weight: bold;
+	}
+}
+
+.footer {
+	background-color: $mainColor;
+	padding: 10px 0;
+
+	p {
+		@extend %titles;
+		font-size: 2.4em;
+		margin: 0;
+		text-align: center;
+	}	
+}
+
+
+
+.mixControls {
+	margin: 40px 0 20px;
+}
+.mixitup { 
+	font-size: 0;
+	text-align: justify
+}
+.mixitup:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.mixitup .mix, .mixitup .gap {
+  display: inline-block;
+  width: 24.5%;
+}
+.mixitup .mix{
+  	
+  	display: none;
+  	//float: left;
+  	font-size: 18px;
+  	
+  	margin-bottom: .7%;
+  	height: 300px;
+  	background: #03899c;
+
+}
+
+
+
+
+@media all and (min-width: 420px){
+  .mixitup .mix, .mixitup .gap{
+    //width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .mixitup .mix, .mixitup .gap{
+    //width: 23.5%;
+  }
 }
