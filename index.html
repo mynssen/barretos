@@ -17,6 +17,12 @@
     <!-- //Estilo// -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- //Fancybox// -->
+    <link href="fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet">
+
+    <!-- //Flexslider// -->
+    <link href="css/flexslider.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,6 +32,7 @@
   </head>
   <body>
 
+  <!-- //Header - Navbar// -->
     <header class="header">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -57,9 +64,9 @@
               <li><a href="#">Portfólio</a></li>
               <li><a href="#">Sobre</a></li>
               <li><a href="#">Contato</a></li>
-              <!--<ul class="nav navbar-nav navbar-right socialIcons">
-                <li><a href="https://www.facebook.com/barretosplantas/" target="_BLANK">Facebook</a></li>
-                <li><a href="https://www.instagram.com/barretosplantas/" target="_BLANK">Instagram</a></li>
+              <ul class="nav navbar-nav navbar-right socialIcons">
+                <li><a href="https://www.facebook.com/barretosplantas/" target="_BLANK" class="pure-button socicon-button"><span class="socicon socicon-facebook"></span></a></li>
+                <li><a href="https://www.instagram.com/barretosplantas/" target="_BLANK"  class="pure-button socicon-button"><span class="socicon socicon-twitter"></span></a></li>
               </ul><!-- socialIcons -->
             </ul>
             <!-- //Redes Sociais// -->
@@ -69,13 +76,8 @@
       </nav>
     </header>
 
-
-  	
-
-  	
-  	
-
-  	<section class="mainBanner">
+  	<!-- //Banner Principal// -->
+    <section class="mainBanner">
   		<div class="container">
         <div class="callToAction">
   				<p>Leve um pedacinho <br> <span>de natureza</span> para sua casa</p>
@@ -84,30 +86,40 @@
   		</div><!--container-->
   	</section>
 
+    <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
 
+    <!-- //Produtos// -->
     <section class="secProdutos">
       <span class="anchor" id="anchorProdutos"></span>
       <div class="container-fluid">
         <div class="row">
+          
+          <!-- //Terrários// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
             <a href="terrarios.php">
               <img class="img-responsive" src="img/destaqueTerrarios.jpg" alt="Terrários">
               <p>Terrários</p>
             </a>
           </article>
+          
+          <!-- //Acessórios// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
             <a href="terrarios.php">
               <img class="img-responsive" src="img/destaqueAcessorios.jpg" alt="Acessórios">
               <p>Acessórios</p>
             </a>
           </article>
+          
+          <!-- //Decoração// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
             <a href="terrarios.php">
               <img class="img-responsive" src="img/destaqueDecoracao.jpg" alt="Decoração">
               <p>Decoração</p>
             </a>
           </article>
+          
+          <!-- //Arranjos// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
             <a href="terrarios.php">
               <img class="img-responsive" src="img/destaqueArranjos.jpg" alt="Arranjos">
@@ -119,9 +131,10 @@
       </div><!--container-fluid-->
     </section>
 
-
+    <!-- //Fundo Escuro// -->
     <div class="darkBg">
 
+      <!-- //Serviços// -->
       <section class="secServicos">
         
         <div class="container">
@@ -142,7 +155,7 @@
 
       </section>    
 
-
+      <!-- //Sobre// -->
       <section class="secSobre">        
           
         <div class="container">
@@ -164,34 +177,34 @@
 
     </div><!--darkBg-->
 
+    <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
 
-    
+    <!-- //Portfolio// -->
     <section class="secPortfolio">
       <div class="container">
 
         <h1>Portfólio</h1>
 
-        <div class="controls mixControls">
-          
+        <!-- //Filtros// -->
+        <div class="controls mixControls">          
           <button class="filter btn btn-default" data-filter="all">Tudo</button>
           <button class="filter btn btn-default" data-filter=".mixTerrarios">Terrários</button>
           <button class="filter btn btn-default" data-filter=".mixAcessorios">Acessórios</button>
           <button class="filter btn btn-default" data-filter=".mixArranjos">Arranjos</button>
           <button class="filter btn btn-default" data-filter=".mixPaisagismo">Paisagismo</button>
-          <button class="filter btn btn-default" data-filter=".mixDecoracao">Decoração</button>
-
         </div>
 
+        <!-- //Galeria// -->
         <div id="mixitup" class="mixitup">
-          <div class="mix mixTerrarios" data-myorder="1">mixTerrarios</div>
-          <div class="mix mixPaisagismo" data-myorder="2">mixPaisagismo</div>
-          <div class="mix mixAcessorios" data-myorder="3">mixAcessorios</div>
-          <div class="mix mixAcessorios" data-myorder="4">mixAcessorios</div>
-          <div class="mix mixTerrarios" data-myorder="5">mixTerrarios</div>
-          <div class="mix mixTerrarios" data-myorder="6">mixTerrarios</div>
-          <div class="mix mixArranjos" data-myorder="7">mixArranjos</div>
-          <div class="mix mixDecoracao" data-myorder="9">mixDecoracao</div>
+          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto"><img src="img/portfolio/terrario01.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/portfolio/paisagismo01.jpg" rel="portfolio" title="Paisagismo"><img src="img/portfolio/paisagismo01.jpg" class="img-responsive"></a>
+          <a class="mix mixAcessorios fancybox" href="img/portfolio/acessorio01.jpg" rel="portfolio" title="Pingente terrário"><img src="img/portfolio/acessorio01.jpg" class="img-responsive"></a>
+          <a class="mix mixAcessorios fancybox" href="img/portfolio/acessorio02.jpg" rel="portfolio" title="Pingente terrário"><img src="img/portfolio/acessorio02.jpg" class="img-responsive"></a>
+          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario02.jpg" rel="portfolio" title="Terrários fechados"><img src="img/portfolio/terrario02.jpg" class="img-responsive"></a>
+          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario03.jpg" rel="portfolio" title="Terrário aberto"><img src="img/portfolio/terrario03.jpg" class="img-responsive"></a>
+          <a class="mix mixArranjos fancybox" href="img/portfolio/arranjo01.jpg" rel="portfolio" title="Buquê de rosas vermelhas"><img src="img/portfolio/arranjo01.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/portfolio/paisagismo02.jpg" rel="portfolio" title="Paisagismo - Vasos e pedras"><img src="img/portfolio/paisagismo02.jpg" class="img-responsive"></a>
           <div class="gap"></div>
           <div class="gap"></div>
         </div>
@@ -199,45 +212,62 @@
       </div><!--container-->
     </section>
 
+    <!-- //Depoimentos// -->
     <section class="secDepoimentos">
       <div class="container">
 
         <h1>Depoimentos</h1>
-        <blockquote>
-          <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
-        </blockquote>
+
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <blockquote>
+                <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
+                <p class="autor">Sandes Moraes</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. </p>
+                <p class="autor">Sandes Moraes</p>
+              </blockquote>
+            </li>            
+            <li>
+              <blockquote>
+                <p>Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
+                <p class="autor">Sandes Moraes</p>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+        
 
       </div><!--container-->
     </section>    
 
+    <!-- //Redes Sociais// -->
     <section class="secSocial">
       <div class="container">
-        <div class="row">
 
-            <div class="col-md-4"><h1>Siga-nos</h1></div>
-            <div class="col-md-4"><p>@barretosplantas</p></div>
-            <div class="col-md-4"><p>/barretosplantas</p></div>
+        <h1>Siga-nos</h1>
+        <ul>
+          <li><a href="" target="_blank">@barretosplantas</a></li>
+          <li><a class="instagram" href="" target="_blank">/barretosplantas</a></li>
+        </ul>
 
-        </div><!--row-->
       </div><!--container-->
     </section>
 
+    <!-- //Separador de Seção// 
+    <div class="styledBorder"></div>-->
 
-
-    <!--<section class="secInstagram">
-      <div class="container">
-        <h1>Siga nosso Instagram</h1>
-        <div id="instafeed" class="clearfix"></div>
-      </div><!--container-->
-    <!--</section>-->
-
-    <div class="styledBorder"></div>
-
+    <!-- //Contato// -->
     <section class="contato">
 
       <div class="container">
         <div class="row">
           
+          <!-- //Formulário de contato// -->
           <div class="formContato col-md-6">
             
             <h1>Entre em contato</h1>
@@ -270,6 +300,7 @@
 
           </div><!--col-->
 
+          <!-- //Lista de Contatos// -->
           <div class="col-md-6">
             <article class="boxContatos">
               
@@ -290,7 +321,7 @@
       </div><!--container-->
     </section><!--contato-->     
 
-
+    <!-- //Footer// -->
     <footer class="footer">
       <div class="container">
         <p>Barreto's Plantas 2016 | Todos os direitos reservados.</p>
@@ -300,23 +331,30 @@
 
     <!-- //jQuery// -->
     <script src="js/jquery.min.js"></script>
+
     <!-- //Bootstrap// -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
 
-    
-
-    <!-- //Parallax// -->
-    <script type="text/javascript" src="js/jquery.stellar.js"></script>
-    <script type="text/javascript">
-      $.stellar();
-    </script>
-
-    <!-- //Scroll suave// -->
+    <!-- //Scroll suave// 
     <script type="text/javascript" src="js/jquery.scrollspeed.js"></script>
     <script type="text/javascript">
       jQuery.scrollSpeed(100, 800);
-    </script> 
+    </script> -->
     
+    <!-- //Navbar - Alteração de estilo// -->
+    <script type="text/javascript">
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 200) {
+            $(".navbar-default").addClass("darkHeader");
+        } else {
+            $(".navbar-default").removeClass("darkHeader");
+        }
+
+      });
+    </script>
+
     <!-- //Âncoras// -->
     <script type="text/javascript">
       $(function() {
@@ -335,27 +373,33 @@
       });
     </script> 
 
-    <script type="text/javascript">
-      $(window).scroll(function() {    
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 200) {
-            $(".navbar-default").addClass("darkHeader");
-        } else {
-            $(".navbar-default").removeClass("darkHeader");
-        }
-      });
-    </script>
-
+    <!-- //MixItUp Portfólio// -->
     <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
     <script type="text/javascript">
       $(function(){
         $('#mixitup').mixItUp();
       });
+    </script>   
+
+    <!-- //Fancybox// -->
+    <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.fancybox').fancybox({
+          padding: 0
+        });
+      });
     </script>
 
-
-    
+    <!-- //Flexslider// -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          directionNav: false
+        });
+      });
+    </script>
     
   </body>
 </html>
