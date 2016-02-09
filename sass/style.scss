@@ -55,6 +55,9 @@ $darkMainColor: #698f75; /* Verde escuro */
 $subColor:#ffe400; /* Amarelo */
 $customFont:'Amatic SC', cursive;
 $paddingSec: 80px;
+$mqMD: 991px;
+$mqSM: 767px;
+
 
 /* //Placeholders// */
 %titles {
@@ -94,7 +97,11 @@ $paddingSec: 80px;
 body { 
 	color: #fff; 
 	font-size: 10px;
-	font-family:"Open Sans", "Helvetica Neue",Helvetica,Arial,sans-serif
+	font-family:"Open Sans", "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	@media screen and (max-width:$mqSM) {
+		font-size: 8px;
+	}
 }
 
 /* //Tipografia// */
@@ -167,11 +174,18 @@ blockquote p {
 	padding: 10px 0;
 	@extend %transitionDefault;
 
-	&.darkHeader {
+	@media screen and (max-width:$mqSM) {
 		background:rgba(0,0,0,.7);
 	}
 
-	.navbar-nav>li>a {
+	&.darkHeader {
+		background:rgba(0,0,0,.8);
+	}
+
+
+
+
+	.navbar-nav>li a {
 		color: #fff;
 		font-family:$customFont;
 		font-size: 3em;
@@ -181,16 +195,64 @@ blockquote p {
 			color: $mainColor;			
 		}
 
+		@media screen and (min-width:768px) and (max-width: $mqMD) {
+			font-size: 2.4em;
+			padding: 15px 8px;
+		}
 	}
+
+	.navbar-nav>.open>a, .navbar-nav>.open>a:focus, .navbar-nav>.open>a:hover {
+		color: $mainColor;
+		background: rgba(0,0,0,.5);
+		@extend %transitionDefault;
+	}
+
+	.navbar-nav>li>.dropdown-menu {
+		background: rgba(0,0,0,.5);
+		@extend %transitionDefault;
+		text-align: right;
+
+		li>a {
+			font-size: 2em;
+
+			&:hover {
+				background: none;
+			}
+		}
+	}
+
+	.navbar-right {
+		margin-right: 0;
+		
+		@media screen and (max-width:$mqSM) {
+			margin: 7.5px 0;
+			li {
+				border-bottom: 1px solid rgba(255,255,255,.1);
+			}
+		}
+	}
+
+
+			.socialIcons li {
+				
+			}
 
 	.socialIcons {
 		margin-left: 5px;
 		padding: 5px 0;
 
+		@media screen and (max-width:$mqSM) {
+			li {
+				display: inline-block;
+				border-bottom: none;
+			}
+		}
+
 		&.navbar-nav>li>a {
 			padding: 0;
 			margin-right: 5px;
 		  border: 2px solid #fff;
+		  width: 40px;
 		  @extend %circle;
 
 		  &:focus, &:hover { 
@@ -206,7 +268,30 @@ blockquote p {
 		&.navbar-nav>li:last-child>a { margin-right: 0; }		
 	}
 
-}
+	.navbar-toggle {
+		border: none;
+		@extend %transitionDefault;
+
+		.icon-bar {
+			background-color: #fff;
+			@extend %transitionDefault;
+		}
+
+		&:focus, &:hover {
+			background-color: #fff;
+
+			.icon-bar {
+				background-color: $mainColor;
+			}
+		}
+	}
+
+	.navbar-collapse {
+		border:none;
+		text-align: right;
+	}
+
+}/* //navbar-default*/
 
 
 .logoMenu {
@@ -214,6 +299,10 @@ blockquote p {
 	float: left;
 	margin: 3px 0 0;
 	width: 200px;
+
+	@media screen and (max-width: $mqSM) {
+		margin-left: 15px;
+	}
 
 	a {
 		background:url(../img/logoMenuP.png) no-repeat center center;
@@ -233,10 +322,10 @@ blockquote p {
 	background: $darkMainColor url(../img/bgTerrarios.jpg) no-repeat center center;
 	background-size: cover;
 	height: 100vh;
-	min-height: 700px;
+	min-height: 480px;
 
 	.container {
-		padding: 100px 0;
+		padding: 100px 15px;
 		height: 100%;
 	}
 
@@ -252,13 +341,20 @@ blockquote p {
 			font-size: 8em;
 			line-height: 1em;
 			position: relative;
-		
+
+			@media screen and (max-width:$mqSM) {
+				font-size: 7em;
+			}		
 
 			span { color: $subColor; }
 		}
+
 		.btn {
 			font-size: 4em;
 
+			@media screen and (max-width:$mqSM) {
+				font-size: 3em;
+			}
 		}
 	}
 
@@ -301,6 +397,7 @@ blockquote p {
 		}
 
 		img {
+			width: 100%;
 			@include transitionCustom(.5s);
 		}
 
@@ -348,6 +445,34 @@ blockquote p {
 	}
 }
 
+.secServicos, .secSobre {
+
+	.boxTexto {
+		
+		@extend %paddingSection;
+		padding-left: 30px;
+		padding-right: 30px;
+
+		@media (max-width: $mqMD) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+		h2 {
+			color: $mainColor;
+		}
+
+	}
+}
+
+.secSobre {
+	.boxTexto {
+		@media (max-width: $mqMD) {
+			padding-top: 0;
+		}
+	}
+}
+
 .secServicos {
 	position: relative;
 
@@ -361,7 +486,7 @@ blockquote p {
 		top: 0;
 		background: #222 url(../img/bgServicos.jpg) no-repeat center center; 
 
-		@media (max-width:992px) {		
+		@media (max-width:$mqMD) {		
 			display: none;
 		}
 	}
@@ -380,27 +505,13 @@ blockquote p {
 		top: 0;
 		background: #222 url(../img/bgSobre.jpg) no-repeat center center;
 
-		@media (max-width:992px) {
+		@media screen and (max-width:$mqMD) {
 			display: none;
 		}
 	}
 }
 
-.secServicos, .secSobre {
 
-	.boxTexto {
-		
-		@extend %paddingSection;
-		padding-left: 30px;
-		padding-right: 30px;
-		
-
-		h2 {
-			color: $mainColor;
-		}
-
-	}
-}
 
 
 .secPortfolio{
@@ -412,6 +523,10 @@ blockquote p {
 
 .mixControls {
 	margin: 40px 0 20px;
+
+	button {
+		margin-bottom: 2px;
+	}
 }
 .mixitup { 
 	font-size: 0;
@@ -425,7 +540,11 @@ blockquote p {
 
 	.mix, .gap {
 		display: inline-block;
-  		width: 24.5%;
+  	width: 24.5%;
+
+  	@media screen and (max-width:$mqSM) {
+			width: 49.5%;
+		}
 	}
 	.mix {
 		display: none;
@@ -487,6 +606,11 @@ blockquote p {
 		z-index: 2;
 		padding: 0 200px;
 		color: #999;
+
+		@media screen and (max-width:$mqMD) {
+			padding: 0;
+			font-size: 14px;
+		}
 	
 		&:before, &:after {
 			color: #ddd;
@@ -501,6 +625,12 @@ blockquote p {
 			transform: rotate(30deg);
 			font-size:15em;
 			z-index: -1;
+
+			@media screen and (max-width:$mqMD) {
+				left: -10px;
+				opacity: .7;
+				filter:alhpa(opacity=70);
+			}
 			
 		}
 		&:after {	
@@ -510,6 +640,12 @@ blockquote p {
 			right: 120px;			
 			bottom: 0;
 			margin-bottom: -50px;
+
+			@media screen and (max-width:$mqMD) {
+				left: auto;
+				right: 60px;
+				bottom: 20px;
+			}
 		}
 
 		.autor { 
@@ -522,16 +658,51 @@ blockquote p {
 }
 
 .secSocial{
-	background: $mainColor url(../img/bgSocial.jpg) no-repeat -120px center;
+	background: $mainColor;
 	padding: 30px 0;
 	height: 120px;
 	position: relative;
+
+	&:after {
+		background: url(../img/bgSocial.jpg) no-repeat right center;
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		right:50%;
+		margin-right: 350px;
+		width: 1000px;
+		z-index: 0;
+
+		@media screen and (max-width:1199px) {
+			margin-right: 250px;
+		}
+
+		@media screen and (max-width:$mqMD) {
+			margin-right: 150px;
+		}
+
+		@media screen and (max-width:$mqSM) {
+			display: none;
+		}
+	}
+
+	.container { 
+		position: relative;
+		z-index: 1;
+	}
 
 	h1 { 
 		display: inline-block; 
 		line-height: 50px;
 		margin-right: 100px;
+
+		@media screen and (max-width:$mqMD) {
+			margin-right: 70px;
+		}
 	}
+	
 
 	ul {  
 		display: inline-block;
@@ -591,11 +762,32 @@ blockquote p {
 		}
 	}
 
+	@media screen and (max-width:$mqSM) {
 
-	p {
+		height: auto;
+		background-image: none;
+		text-align: center;
+
+		h1, ul, ul li { display: block; }
+
+		h1 {
+			margin-right: 0;
+		}
+
+		ul li {
+			margin-bottom: 5px;
+
+			a {
+			 	margin: 0 0 0 -54px;
+			}
+		}
+	}
+
+
+	/*p {
 		@extend %titles;
 		font-size: 3.6em;
-	}
+	}*/
 }
 
 
@@ -619,6 +811,11 @@ blockquote p {
 	background: rgba(0,0,0,.5) url(../img/letter.png) no-repeat right bottom;
 	padding: 30px;
 	margin-top: 60px;
+
+	@media screen and (max-width:$mqSM) {
+		padding: 0;
+		background: none;
+	}
 
 	h2 {
 		font-size: 3em;
