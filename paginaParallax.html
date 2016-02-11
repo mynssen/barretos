@@ -32,6 +32,8 @@
   </head>
   <body>
 
+  <div class="parallax">
+
   <!-- //Header - Navbar// -->
     <header class="header">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -61,9 +63,9 @@
                 </ul>
               </li>
               <li><a href="#">Serviços</a></li>
-              <!--<li><a href="#">Portfólio</a></li>-->
+              <li><a href="#">Portfólio</a></li>
               <li><a href="#">Sobre</a></li>
-              <li><a href="#anchorContato">Contato</a></li>
+              <li><a href="#">Contato</a></li>
               <ul class="nav navbar-nav navbar-right socialIcons">
                 <li><a href="https://www.facebook.com/barretosplantas/" target="_BLANK" class="pure-button socicon-button"><span class="socicon socicon-facebook"></span></a></li>
                 <li><a href="https://www.instagram.com/barretosplantas/" target="_BLANK"  class="pure-button socicon-button"><span class="socicon socicon-twitter"></span></a></li>
@@ -77,173 +79,65 @@
     </header>
 
   	<!-- //Banner Principal// -->
-    <section class="mainBanner">
-  		<div class="container">
-        <div class="callToAction">
-  				<h1>Leve um pedacinho <br> <span>de natureza</span> para sua casa</h1>
-          <a class="btn btn-default" href="#anchorProdutos">Conheça nossos produtos</a>
-        </div><!--callToAction-->
-  		</div><!--container-->
-  	</section>
+    <div class="parallax__group">
+      <div class="mainBanner parallax__layer parallax__layer--deep"></div>
+        <section class="mainBanner terrarios">
+      		<div class="container">
+            <div class="callToAction">
+      				<h1>Terrários</h1>
+              <h2>Um jardim que <span>cabe na sua estante</span></h2>
+              <a class="btn btn-default" href="#anchorTerrarios">Conheça os modelos</a>
+            </div><!--callToAction-->
+      		</div><!--container-->
+      	</section>
+    </div>
 
     <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
 
-    <!-- //Produtos// -->
-    <section class="secProdutos">
-      <span class="anchor" id="anchorProdutos"></span>
-      <div class="container-fluid">
-        <div class="row">
-          
-          <!-- //Terrários// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueTerrarios.jpg" alt="Terrários">
-              <p>Terrários</p>
-            </a>
-          </article>
-          
-          <!-- //Acessórios// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueAcessorios.jpg" alt="Acessórios">
-              <p>Acessórios</p>
-            </a>
-          </article>
-          
-          <!-- //Decoração// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueDecoracao.jpg" alt="Decoração">
-              <p>Decoração</p>
-            </a>
-          </article>
-          
-          <!-- //Arranjos// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueArranjos.jpg" alt="Arranjos">
-              <p>Arranjos</p>
-            </a>
-          </article>
 
-        </div><!--row-->
-      </div><!--container-fluid-->
-    </section>
+    <section class="secDefault">
+      <span class="anchor" id="anchorTerrarios"></span>
+      <div class="container">
 
-    <!-- //Fundo Escuro// -->
-    <div class="darkBg">
-
-      <!-- //Serviços// -->
-      <section class="secServicos">
-        
-        <div class="container">
+        <article class="modeloProduto">          
           <div class="row">
-            <div class="col-md-6 col-sm-12">
-
-              <article class="boxTexto">
-                <h2>Paisagismo</h2>
-                <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos. Atendemos a pedidos de empresas e particulares.</p>            
-                <h2>Decoração floral</h2>
-                <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais.</p>
-                <a class="btn btn-default">Conheça nossos serviços</a>
-              </article>
-
+            <div class="col-md-4">
+              <img class="img-responsive" src="http://lorempixel.com/800/800/abstract/1">
             </div><!--col-->
-          </div><!--row-->
-        </div><!--container-->
+            <div class="col-md-8">
+              <h1>Terrários abertos</h1>
+              <p>Peças únicas, que possuem a capacidade de deixar qualquer ambiente mais cheio de vida.</p>
+              <p>Nossos jardins são criados com plantas tropicais, como musgos, orquídeas e também bonsais, cactos e suculentas. Feitos  para quem tem pouco espaço e muita vontade de ter um cantinho verde.</p>
+              <p>Ter um jardim crescendo dentro de casa reforça a conexão com a natureza e o que ela tem para nos oferecer de bom, todos os dias.</p>
+              <p>Além de objetos de decoração belos e dinâmicos, eles nos chamam a atenção para a grandeza da natureza e todo o universo que habita num simples e pequeno espaço.</p>
+            </div><!--col-->
+          </div><!--row-->          
+        </article><!--modeloProduto-->
 
-      </section>    
-
-      <!-- //Sobre// -->
-      <section class="secSobre">        
+        <article class="modeloProduto">
           
-        <div class="container">
           <div class="row">
-            <div class="col-md-6 col-md-offset-6 col-sm-12">
-
-              <article class="boxTexto">
-                <h2>A Barreto's Plantas</h2>
-                <p>Somos uma empresa atuante no mercado verde. 
-  Acreditamos na preservação e cuidado com a natureza, como forma de preservarmos a vida como um todo. </p>
-                <a class="btn btn-default">Conheça nossa história</a>
-              </article>
             
+            <div class="col-md-4">
+              <img class="img-responsive" src="http://lorempixel.com/800/800/abstract/2">
             </div><!--col-->
-          </div><!--row-->
-        </div><!--container-->
-
-      </section>
-
-    </div><!--darkBg-->
-
-    <!-- //Separador de Seção// -->
-    <div class="styledBorder"></div>
-
-    <!-- //Portfolio// -->
-    <section class="secPortfolio">
-      <div class="container">
-
-        <h1>Portfólio</h1>
-
-        <!-- //Filtros// -->
-        <div class="controls mixControls">          
-          <button class="filter btn btn-default" data-filter="all">Tudo</button>
-          <button class="filter btn btn-default" data-filter=".mixTerrarios">Terrários</button>
-          <button class="filter btn btn-default" data-filter=".mixAcessorios">Acessórios</button>
-          <button class="filter btn btn-default" data-filter=".mixArranjos">Arranjos</button>
-          <button class="filter btn btn-default" data-filter=".mixPaisagismo">Paisagismo</button>
-        </div>
-
-        <!-- //Galeria// -->
-        <div id="mixitup" class="mixitup">
-          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto"><img src="img/portfolio/terrario01.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/portfolio/paisagismo01.jpg" rel="portfolio" title="Paisagismo"><img src="img/portfolio/paisagismo01.jpg" class="img-responsive"></a>
-          <a class="mix mixAcessorios fancybox" href="img/portfolio/acessorio01.jpg" rel="portfolio" title="Pingente terrário"><img src="img/portfolio/acessorio01.jpg" class="img-responsive"></a>
-          <a class="mix mixAcessorios fancybox" href="img/portfolio/acessorio02.jpg" rel="portfolio" title="Pingente terrário"><img src="img/portfolio/acessorio02.jpg" class="img-responsive"></a>
-          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario02.jpg" rel="portfolio" title="Terrários fechados"><img src="img/portfolio/terrario02.jpg" class="img-responsive"></a>
-          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario03.jpg" rel="portfolio" title="Terrário aberto"><img src="img/portfolio/terrario03.jpg" class="img-responsive"></a>
-          <a class="mix mixArranjos fancybox" href="img/portfolio/arranjo01.jpg" rel="portfolio" title="Buquê de rosas vermelhas"><img src="img/portfolio/arranjo01.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/portfolio/paisagismo02.jpg" rel="portfolio" title="Paisagismo - Vasos e pedras"><img src="img/portfolio/paisagismo02.jpg" class="img-responsive"></a>
-          <div class="gap"></div>
-          <div class="gap"></div>
-        </div>
+            <div class="col-md-8">
+              <h1>Terrários fechados</h1>
+              <p>São mini ecossistemas que representam de forma perfeita a sustentabilidade.</p>
+              <p>Podem ser formados por diversas espécies naturais, desde que as mesmas sobrevivam em local úmido, como é o caso do musgo.</p>
+              <p>Por estarem tampados, a rega deve ser feita, no máximo, mensalmente.</p>
+              <p>A pouca água borrifada dentro do pote será absorvida pela planta e depois evaporará para a atmosfera. Como o pote está fechado, a água condensa no vidro e então escorre novamente para umedecer o solo.</p>
+              <p>Deve ser mantido fora do sol, se adaptando muito bem a locais fechados, com luz artificial, como residências e escritórios.</p>
+            </div><!--col-->
+            
+          </div><!--row-->          
+        </article><!--modeloProduto-->
 
       </div><!--container-->
     </section>
 
-    <!-- //Depoimentos// -->
-    <section class="secDepoimentos">
-      <div class="container">
-
-        <h1>Depoimentos</h1>
-
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <blockquote>
-                <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
-                <p class="autor">Sandes Moraes</p>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. </p>
-                <p class="autor">Sandes Moraes</p>
-              </blockquote>
-            </li>            
-            <li>
-              <blockquote>
-                <p>Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
-                <p class="autor">Sandes Moraes</p>
-              </blockquote>
-            </li>
-          </ul>
-        </div>
-        
-
-      </div><!--container-->
-    </section>  
+  
 
     <!-- //Redes Sociais// -->
     <section class="secSocial">
@@ -263,7 +157,6 @@
 
     <!-- //Contato// -->
     <section class="contato">
-      <span class="anchor" id="anchorContato"></span>
 
       <div class="container">
         <div class="row">
@@ -330,17 +223,20 @@
     </footer>    
 
 
+    </div><!--parallax-->
+
+
     <!-- //jQuery// -->
     <script src="js/jquery.min.js"></script>
 
     <!-- //Bootstrap// -->
     <script src="js/bootstrap.min.js"></script>    
 
-    <!-- //Scroll suave// -->
+    <!-- //Scroll suave// 
     <script type="text/javascript" src="js/jquery.scrollspeed.js"></script>
     <script type="text/javascript">
-      jQuery.scrollSpeed(100, 1000);
-    </script> 
+      jQuery.scrollSpeed(100, 800);
+    </script> -->
     
     <!-- //Navbar - Alteração de estilo// -->
     <script type="text/javascript">
@@ -401,6 +297,8 @@
         });
       });
     </script>
+
+
     
   </body>
 </html>

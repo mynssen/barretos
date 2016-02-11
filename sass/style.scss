@@ -149,6 +149,7 @@ p + .btn-default { margin-top: 30px; }
 label {
 	@extend %titles;
 	font-size: 3em;
+	font-weight: 400;
 }
 .form-control {
 	border: none;
@@ -196,7 +197,7 @@ blockquote p {
 		}
 
 		@media screen and (min-width:768px) and (max-width: $mqMD) {
-			font-size: 2.4em;
+			//font-size: 2.4em;
 			padding: 15px 8px;
 		}
 	}
@@ -315,7 +316,11 @@ blockquote p {
 
 
 
-
+@keyframes jump {
+	0% { transform:translateY(10px); }
+	50% { transform:translateY(0); }
+	100% { transform:translateY(10px) }
+}
 
 .mainBanner {
 
@@ -323,6 +328,34 @@ blockquote p {
 	background-size: cover;
 	height: 100vh;
 	min-height: 480px;
+	position: relative;
+
+	&.terrarios {
+		background-image:  url(../img/bgTerrarios2.jpg);
+	}
+	&.sobre {
+		background-image:  url(../img/bgSobre2.jpg);
+	}
+
+	&:after {
+		font-family: 'Glyphicons Halflings';
+	    font-style: normal;
+	    font-weight: 400;
+	    font-size: 3em;
+	    //line-height: 1;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+		content: "\e259";
+		display: block;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		margin-left: -25px;
+		width: 50px;
+		text-align: center;
+		z-index: 2;
+		animation: jump 2s infinite;
+	}
 
 	.container {
 		padding: 100px 15px;
@@ -335,7 +368,7 @@ blockquote p {
 		margin-top: -100px;
 		z-index: 2;
 
-		p {
+		h1 {
 		
 			font-family: $customFont;
 			font-size: 8em;
@@ -345,9 +378,12 @@ blockquote p {
 			@media screen and (max-width:$mqSM) {
 				font-size: 7em;
 			}		
-
-			span { color: $subColor; }
+			
 		}
+
+		h2 { color: $subColor; font-size: 3.4em; margin: -10px 0 30px; }
+
+		span { color: $subColor; }
 
 		.btn {
 			font-size: 4em;
@@ -556,6 +592,30 @@ blockquote p {
 
 	  	img {
 	  		@include transitionCustom(.5s);
+	  	}
+
+	  	p {
+	  		background: rgba($darkMainColor,.9);
+	  		color: #fff;
+	  		font-size: 1em;
+	  		position: absolute;
+	  		right: 0;
+	  		bottom: 0;
+	  		margin: 0;
+	  		padding: 25px 10px 10px;
+	  		z-index: 2;
+
+	  		&:after {
+	  			content: "Ref.";
+	  			display: block;
+	  			font-size: .8em;
+	  			font-style: italic;
+	  			width: 100%;
+	  			position: absolute;
+	  			top: 10px;
+	  			left: 0;
+	  			text-align: center;
+	  		}
 	  	}
 
 	  	&:after {
@@ -793,6 +853,7 @@ blockquote p {
 
 .contato {
 	@extend .darkBg;
+	position: relative;
 	
 	>.container {
 		@extend %paddingSection;
@@ -844,4 +905,26 @@ blockquote p {
 	}	
 }
 
+
+/* //Internas// */
+.secDefault {
+	background: #222 url(../img/bgDarkWood.jpg) repeat center top;
+	position: relative;
+	@extend %paddingSection;
+}
+.modeloProduto {
+	margin-bottom: 50px;
+
+	&:last-child { margin-bottom: 0; }
+
+	h1, h2 { color: $mainColor; margin-bottom: 20px; }
+	h2 { font-size: 3.2em; }
+
+}
+
+img.destaqueInternas {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
 
