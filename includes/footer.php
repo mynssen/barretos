@@ -86,5 +86,3 @@
     <p>Barreto's Plantas 2016 | Todos os direitos reservados.</p>
   </div><!--container-->
 </footer>    
-
-<?php include ("inc-scripts.php"); ?>
