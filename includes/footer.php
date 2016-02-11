@@ -29,23 +29,31 @@
 
           <div class="form-group col-sm-12">
               <label for="nome">Nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" value"<?php echo htmlspecialchars($_POST['nome']);?>" required>
+              <?php echo "<p class='text-danger'>$errName</p>";?>
             </div>
             <div class="form-group col-sm-6">
               <label for="telefone">Telefone</label>
-              <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone. Ex: 21999999999" required>
+              <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone">
             </div>
             <div class="form-group col-sm-6">
               <label for="email">E-mail</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail. Ex: seuemail@email.com" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" value="<?php echo htmlspecialchars($_POST['email']);?>" required>
+              <?php echo "<p class='text-danger'>$errEmail</p>";?>
             </div>
             <div class="form-group col-sm-12">
               <label for="mensagem">Mensagem</label>
-              <textarea rows="4" class="form-control" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+              <textarea rows="4" class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" value="<?php echo htmlspecialchars($_POST['nome']);?>"></textarea>
+              <?php echo "<p class='text-danger'>$errMessage</p>";?>
             </div>
             <div class="form-group col-sm-12">
               <button type="submit" class="btn btn-default">Enviar</button>
             </div>
+
+            <div class="form-group col-sm-12">
+              <?php echo $result; ?>    
+            </div>
+
           </div><!--row-->
         </form>
 

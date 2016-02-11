@@ -11,6 +11,10 @@
   </head>
   <body>
 
+    
+    <!-- //Configuração de Envio - Formulário de Contato// -->
+    <?php include ("includes/sendConfig.php"); ?>
+
     <!-- //Header - Navbar// -->
     <?php include ("includes/header.php"); ?>
 
