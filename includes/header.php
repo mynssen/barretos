@@ -22,7 +22,7 @@
               <li><a href="terrarios.php">Terrários</a></li>
               <li><a href="acessorios.php">Acessórios</a></li>
               <li><a href="decoracao.php">Decoração</a></li>                
-              <li><a href="arranjos.php">Arranjoooooos</a></li>
+              <li><a href="arranjos.php">Arranjos</a></li>
             </ul>
           </li>
           <li><a href="servicos.php">Serviços</a></li>
