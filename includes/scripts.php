@@ -42,6 +42,12 @@
   });
 </script> 
 
+<!-- //Stellar// -->
+<script type="text/javascript" src="js/jquery.stellar.js"></script>
+<script type="text/javascript">
+  $.stellar();
+</script>
+
 <!-- //MixItUp Portfólio// -->
 <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 <script type="text/javascript">
@@ -54,8 +60,16 @@
 <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('.fancybox').fancybox({
-      padding: 0
+    $('.fancybox').fancybox();
+  });
+</script>
+
+<!-- //Flexslider// -->
+<script src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      directionNav: false
     });
   });
 </script>

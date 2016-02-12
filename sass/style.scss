@@ -324,18 +324,31 @@ blockquote p {
 
 .mainBanner {
 
-	background: $darkMainColor url(../img/bgTerrarios.jpg) no-repeat center center;
+	background: $darkMainColor url(../img/banners/home.jpg) no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 	min-height: 480px;
 	position: relative;
 
 	&.terrarios {
-		background-image:  url(../img/bgTerrarios2.jpg);
+		background-image:  url(../img/banners/terrarios.jpg);
+	}
+	&.acessorios {
+		background-image:  url(../img/banners/acessorios.jpg);
+	}
+	&.decoracao {
+		background-image:  url(../img/banners/decoracao.jpg);
+	}
+	&.arranjos {
+		background-image:  url(../img/banners/arranjos.jpg);
+	}
+	&.servicos {
+		background-image:  url(../img/banners/servicos.jpg);
 	}
 	&.sobre {
-		background-image:  url(../img/bgSobre2.jpg);
+		background-image:  url(../img/banners/sobre.jpg);
 	}
+	
 
 	&:after {
 		font-family: 'Glyphicons Halflings';
@@ -481,7 +494,31 @@ blockquote p {
 	}
 }
 
-.secServicos, .secSobre {
+.secHalf {
+	position: relative;
+
+	&:after {
+
+		content:"";
+		display: block;
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #222 url(../img/bgServicos.jpg) no-repeat center center; 
+		background-size: cover;
+
+		@media (max-width:$mqMD) {		
+			display: none;
+		}
+	}
+
+	&.imgRight {
+		&:after{
+			left:auto; right: 0;
+		}
+	}
 
 	.boxTexto {
 		
@@ -501,48 +538,19 @@ blockquote p {
 	}
 }
 
+
+.secServicos {
+
+	&:after { background: #222 url(../img/bgServicos.jpg) no-repeat center center; }
+}
+
 .secSobre {
+	
+	&:after { background: #222 url(../img/bgSobre.jpg) no-repeat center center; }
+
 	.boxTexto {
 		@media (max-width: $mqMD) {
 			padding-top: 0;
-		}
-	}
-}
-
-.secServicos {
-	position: relative;
-
-	&:after {
-		content:"";
-		display: block;
-		width: 50%;
-		height: 100%;
-		position: absolute;
-		right: 0;
-		top: 0;
-		background: #222 url(../img/bgServicos.jpg) no-repeat center center; 
-
-		@media (max-width:$mqMD) {		
-			display: none;
-		}
-	}
-}
-
-.secSobre {
-	position: relative;
-
-	&:after {
-		content:"";
-		display: block;
-		width: 50%;
-		height: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-		background: #222 url(../img/bgSobre.jpg) no-repeat center center;
-
-		@media screen and (max-width:$mqMD) {
-			display: none;
 		}
 	}
 }
@@ -567,11 +575,12 @@ blockquote p {
 .mixitup { 
 	font-size: 0;
 	text-align: justify;
+	min-height: 280px;
 
 	&:after {
 		content: '';
   		display: inline-block;
- 		width: 100%;
+ 		width: 100%; 
 	}
 
 	.mix, .gap {
@@ -864,6 +873,7 @@ blockquote p {
 	}
 	form {
 		margin-top: 30px;
+		position: relative;
 	}
 }
 
@@ -928,3 +938,6 @@ img.destaqueInternas {
 	margin-bottom: 20px;
 }
 
+.modal { color: $mainColor; }
+.modal-title { font-size: 3.8em; }
+.modal-body { color: #444; }

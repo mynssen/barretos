@@ -19,11 +19,12 @@
     <?php include ("includes/header.php"); ?>
 
     <!-- //Banner Principal// -->
-    <section class="mainBanner">
+    <section class="mainBanner servicos">
       <div class="container">
         <div class="callToAction">
-          <h1>Leve um pedacinho <br> <span>de natureza</span> para sua casa</h1>
-          <a class="btn btn-default" href="#anchorProdutos">Conheça nossos produtos</a>
+          <h1>Serviços</h1>
+          <h2>Que tal um projeto realizado pela nossa equipe?</h2>
+          <a class="btn btn-default" href="#anchorContent">Saiba mais</a>
         </div><!--callToAction-->
       </div><!--container-->
     </section>
@@ -31,93 +32,29 @@
     <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
 
-    <!-- //Produtos// -->
-    <section class="secProdutos">
-      <span class="anchor" id="anchorProdutos"></span>
-      <div class="container-fluid">
-        <div class="row">
-          
-          <!-- //Terrários// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueTerrarios.jpg" alt="Terrários">
-              <p>Terrários</p>
-            </a>
-          </article>
-          
-          <!-- //Acessórios// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueAcessorios.jpg" alt="Acessórios">
-              <p>Acessórios</p>
-            </a>
-          </article>
-          
-          <!-- //Decoração// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueDecoracao.jpg" alt="Decoração">
-              <p>Decoração</p>
-            </a>
-          </article>
-          
-          <!-- //Arranjos// -->
-          <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueArranjos.jpg" alt="Arranjos">
-              <p>Arranjos</p>
-            </a>
-          </article>
-
-        </div><!--row-->
-      </div><!--container-fluid-->
-    </section>
-
-    <!-- //Fundo Escuro// -->
-    <div class="darkBg">
-
-      <!-- //Serviços// -->
-      <section class="secServicos secHalf imgRight">
+    <!-- //Sobre// -->
+    <section class="secDefault secHalf servicos">   
+      <span class="anchor" id="anchorContent"></span>     
         
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 col-sm-12">
 
-              <article class="boxTexto">
-                <h2>Paisagismo</h2>
-                <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos. Atendemos a pedidos de empresas e particulares.</p>            
-                <h2>Decoração floral</h2>
-                <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais.</p>
-                <a class="btn btn-default">Conheça nossos serviços</a>
-              </article>
+            <article class="boxTexto">
+              <h2>Paisagismo</h2>
+              <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos, atendendo a pedidos de empresas e particulares.</p>
+              <p>Nosso objetivo está em trazer a natureza para onde você estiver.</p>
 
-            </div><!--col-->
-          </div><!--row-->
-        </div><!--container-->
+              <h2>Decoração floral</h2>
+              <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais. Também criamos arranjos e buquês naturais, feitos com flores frescas, escolhidas sob medida para cada ocasião.</p>
 
-      </section>    
-
-      <!-- //Sobre// -->
-      <section class="secSobre secHalf">        
+            </article>
           
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-md-offset-6 col-sm-12">
+          </div><!--col-->
+        </div><!--row-->
+      </div><!--container-->
 
-              <article class="boxTexto">
-                <h2>A Barreto's Plantas</h2>
-                <p>Somos uma empresa atuante no mercado verde. 
-  Acreditamos na preservação e cuidado com a natureza, como forma de preservarmos a vida como um todo. </p>
-                <a class="btn btn-default">Conheça nossa história</a>
-              </article>
-            
-            </div><!--col-->
-          </div><!--row-->
-        </div><!--container-->
-
-      </section>
-
-    </div><!--darkBg-->
+    </section>
 
     <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
@@ -152,11 +89,8 @@
         </div>
 
       </div><!--container-->
-    </section>
+    </section>    
   
-    <!-- //Depoimentos// -->
-    <?php include("includes/depoimentos.php"); ?>
-
     <!-- //Footer: Redes Sociais, Contato e Copyrights// -->
     <?php include("includes/footer.php"); ?>
 

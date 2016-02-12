@@ -12,8 +12,8 @@
             option = easing || 'default',
             root = 0,
             scroll = false,
-            scrollY,
-            scrollX,
+            scrollY = $document.height() > $window.height(),
+            scrollX = $document.width() > $window.width(),
             view;
             
         if (window.navigator.msPointerEnabled)
