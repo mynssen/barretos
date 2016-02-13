@@ -33,7 +33,7 @@
     <div class="styledBorder"></div>
 
     <!-- //Sobre// -->
-    <section class="secDefault secHalf empresa">   
+    <section class="secDefault secHalf sobre">   
       <span class="anchor" id="anchorContent"></span>     
         
       <div class="container">

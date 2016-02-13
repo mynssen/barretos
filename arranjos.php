@@ -58,56 +58,48 @@
     <section class="secPortfolio">
       <div class="container">
 
-        <h1>Nosso catálogo</h1>
+        <h1>Portfólio</h1>
 
         <!-- //Filtros// -->
         <div class="controls mixControls">          
-          <button class="filter btn btn-default" data-filter="all">Todos</button>
+          <!--<button class="filter btn btn-default" data-filter="all">Todos</button>
           <button class="filter btn btn-default" data-filter=".mixAbertos">Abertos</button>
-          <button class="filter btn btn-default" data-filter=".mixFechados">Fechados</button>
+          <button class="filter btn btn-default" data-filter=".mixFechados">Fechados</button>-->
         </div>
 
         <!-- //Galeria// -->
         <div id="mixitup" class="mixitup">
           
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE01</p>
+          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/01.jpg" rel="portfolio" title="Mix de rosas">
+            <img src="img/produtos/arranjos/01.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE02</p>
+          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/02.jpg" rel="portfolio" title="Rosas e margaridas">
+            <img src="img/produtos/arranjos/02.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE03</p>
+          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/03.jpg" rel="portfolio" title="Rosas vermelhas">
+            <img src="img/produtos/arranjos/03.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE04</p>
+          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/04.jpg" rel="portfolio" title="Rosas dobradas">
+            <img src="img/produtos/arranjos/04.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC01</p>
+          <a class="mix mixFechados fancybox" href="img/produtos/arranjos/05.jpg" rel="portfolio" title="Rosas azuis">
+            <img src="img/produtos/arranjos/05.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC02</p>
+          <a class="mix mixFechados fancybox" href="img/produtos/arranjos/06.jpg" rel="portfolio" title="Mix de flores">
+            <img src="img/produtos/arranjos/06.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC03</p>
+          <a class="mix mixFechados fancybox" href="img/produtos/arranjos/07.jpg" rel="portfolio" title="Mix de flores">
+            <img src="img/produtos/arranjos/07.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC04</p>
+          <a class="mix mixFechados fancybox" href="img/produtos/arranjos/08.jpg" rel="portfolio" title="Rosas vermelhas">
+            <img src="img/produtos/arranjos/08.jpg" class="img-responsive">
           </a>
 
           <div class="gap"></div>

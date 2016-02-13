@@ -52,7 +52,7 @@
 /* //Variáveis// */
 $mainColor: #95c5a0; /* Verde claro */
 $darkMainColor: #698f75; /* Verde escuro */
-$subColor:#ffe400; /* Amarelo */
+$subColor:#e0d891; /* Areia */
 $customFont:'Amatic SC', cursive;
 $paddingSec: 80px;
 $mqMD: 991px;
@@ -514,9 +514,34 @@ blockquote p {
 		}
 	}
 
+	&.terrarioAberto:after {
+		background-image: url(../img/produtos/terrarios-abertos/destaque.jpg);
+	}
+	&.terrarioFechado:after {
+		background-image: url(../img/produtos/terrarios-fechados/destaque.jpg);
+	}
+	&.acessorios:after {
+		background-image: url(../img/produtos/acessorios/destaque.jpg);
+	}	
+	&.decoracao:after {
+		background-image: url(../img/produtos/decoracao/destaque.jpg);
+	}
+	&.arranjos:after {
+		background-image: url(../img/produtos/arranjos/destaque.jpg);
+	}
+	&.sobre:after {
+		background-image: url(../img/produtos/sobre/destaque.jpg);
+	}
+	&.paisagismo:after {
+		background-image: url(../img/produtos/servicos/destaquePaisagismo.jpg);
+	}
+	&.floral:after {
+		background-image: url(../img/produtos/servicos/destaqueDecoracao.jpg);
+	}
+
 	&.imgRight {
 		&:after{
-			left:auto; right: 0;
+			left:auto; right: 0; 
 		}
 	}
 
@@ -920,7 +945,6 @@ blockquote p {
 .secDefault {
 	background: #222 url(../img/bgDarkWood.jpg) repeat center top;
 	position: relative;
-	@extend %paddingSection;
 }
 .modeloProduto {
 	margin-bottom: 50px;

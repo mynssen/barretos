@@ -32,29 +32,50 @@
     <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
 
-    <!-- //Sobre// -->
-    <section class="secDefault secHalf servicos">   
-      <span class="anchor" id="anchorContent"></span>     
-        
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-6 col-sm-12">
+    <div class="darkBg">
 
-            <article class="boxTexto">
-              <h2>Paisagismo</h2>
-              <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos, atendendo a pedidos de empresas e particulares.</p>
-              <p>Nosso objetivo está em trazer a natureza para onde você estiver.</p>
-
-              <h2>Decoração floral</h2>
-              <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais. Também criamos arranjos e buquês naturais, feitos com flores frescas, escolhidas sob medida para cada ocasião.</p>
-
-            </article>
+      <!-- //Paisagismo// -->
+      <section class="secHalf paisagismo">   
+        <span class="anchor" id="anchorContent"></span>     
           
-          </div><!--col-->
-        </div><!--row-->
-      </div><!--container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-sm-12">
 
-    </section>
+              <article class="boxTexto">
+                <h2>Paisagismo</h2>
+                <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos, atendendo a pedidos de empresas e particulares.</p>
+                <p>Nosso objetivo está em trazer a natureza para onde você estiver.</p>
+
+              </article>
+            
+            </div><!--col-->
+          </div><!--row-->
+        </div><!--container-->
+
+      </section>
+
+      <!-- //Decoração Floral// -->
+      <section class="secHalf imgRight floral">   
+        <span class="anchor" id="anchorContent"></span>     
+          
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+
+              <article class="boxTexto">
+                <h2>Decoração floral</h2>
+                <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais. Também criamos arranjos e buquês naturais, feitos com flores frescas, escolhidas sob medida para cada ocasião.</p>
+
+              </article>
+            
+            </div><!--col-->
+          </div><!--row-->
+        </div><!--container-->
+
+      </section>
+
+    </div><!--darkBg-->
 
     <!-- //Separador de Seção// -->
     <div class="styledBorder"></div>
@@ -68,22 +89,21 @@
         <!-- //Filtros// -->
         <div class="controls mixControls">          
           <button class="filter btn btn-default" data-filter="all">Tudo</button>
-          <button class="filter btn btn-default" data-filter=".mixTerrarios">Terrários</button>
-          <button class="filter btn btn-default" data-filter=".mixAcessorios">Acessórios</button>
-          <button class="filter btn btn-default" data-filter=".mixArranjos">Arranjos</button>
           <button class="filter btn btn-default" data-filter=".mixPaisagismo">Paisagismo</button>
+          <button class="filter btn btn-default" data-filter=".mixDecoracao">Decoração floral</button>
         </div>
 
         <!-- //Galeria// -->
         <div id="mixitup" class="mixitup">
-          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto"><img src="img/portfolio/terrario01.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/portfolio/paisagismo01.jpg" rel="portfolio" title="Paisagismo"><img src="img/portfolio/paisagismo01.jpg" class="img-responsive"></a>
-          <a class="mix mixAcessorios fancybox" href="img/portfolio/acessorio01.jpg" rel="portfolio" title="Pingente terrário"><img src="img/portfolio/acessorio01.jpg" class="img-responsive"></a>
-          <a class="mix mixAcessorios fancybox" href="img/portfolio/acessorio02.jpg" rel="portfolio" title="Pingente terrário"><img src="img/portfolio/acessorio02.jpg" class="img-responsive"></a>
-          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario02.jpg" rel="portfolio" title="Terrários fechados"><img src="img/portfolio/terrario02.jpg" class="img-responsive"></a>
-          <a class="mix mixTerrarios fancybox" href="img/portfolio/terrario03.jpg" rel="portfolio" title="Terrário aberto"><img src="img/portfolio/terrario03.jpg" class="img-responsive"></a>
-          <a class="mix mixArranjos fancybox" href="img/portfolio/arranjo01.jpg" rel="portfolio" title="Buquê de rosas vermelhas"><img src="img/portfolio/arranjo01.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/portfolio/paisagismo02.jpg" rel="portfolio" title="Paisagismo - Vasos e pedras"><img src="img/portfolio/paisagismo02.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/01.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/01.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/02.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/02.jpg" class="img-responsive"></a>
+          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/01.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/01.jpg" class="img-responsive"></a>
+          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/02.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/02.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/03.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/03.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/04.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/04.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/05.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/05.jpg" class="img-responsive"></a>
+          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/03.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/03.jpg" class="img-responsive"></a>
+
           <div class="gap"></div>
           <div class="gap"></div>
         </div>

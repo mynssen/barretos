@@ -58,61 +58,7 @@
     <section class="secPortfolio">
       <div class="container">
 
-        <h1>Nosso catálogo</h1>
-
-        <!-- //Filtros// -->
-        <div class="controls mixControls">          
-          <button class="filter btn btn-default" data-filter="all">Todos</button>
-          <button class="filter btn btn-default" data-filter=".mixAbertos">Abertos</button>
-          <button class="filter btn btn-default" data-filter=".mixFechados">Fechados</button>
-        </div>
-
-        <!-- //Galeria// -->
-        <div id="mixitup" class="mixitup">
-          
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE01</p>
-          </a>
-
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE02</p>
-          </a>
-
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE03</p>
-          </a>
-
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE04</p>
-          </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC01</p>
-          </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC02</p>
-          </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC03</p>
-          </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC04</p>
-          </a>
-
-          <div class="gap"></div>
-          <div class="gap"></div>
-        </div>
+        <h1>Em breve uma coleção novinha em folha pra você!</h1>
 
       </div><!--container-->
     </section> 
