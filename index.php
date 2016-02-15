@@ -47,7 +47,7 @@
           
           <!-- //Acessórios// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
+            <a href="acessorios.php">
               <img class="img-responsive" src="img/destaqueAcessorios.jpg" alt="Acessórios">
               <p>Acessórios</p>
             </a>
@@ -55,17 +55,17 @@
           
           <!-- //Decoração// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
+            <a href="decoracao.php">
               <img class="img-responsive" src="img/destaqueDecoracao.jpg" alt="Decoração">
               <p>Decoração</p>
             </a>
           </article>
           
-          <!-- //Arranjos// -->
+          <!-- //Buquês// -->
           <article class="boxProduto col-md-3 col-sm-6 col-xs-12">
-            <a href="terrarios.php">
-              <img class="img-responsive" src="img/destaqueArranjos.jpg" alt="Arranjos">
-              <p>Arranjos</p>
+            <a href="buques.php">
+              <img class="img-responsive" src="img/destaqueArranjos.jpg" alt="Buquês">
+              <p>Buquês</p>
             </a>
           </article>
 

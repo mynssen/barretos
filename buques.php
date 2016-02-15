@@ -22,7 +22,7 @@
     <section class="mainBanner arranjos">
       <div class="container">
         <div class="callToAction">
-          <h1>Arranjos</h1>
+          <h1>Buquês</h1>
           <h2>Combinações personalizadas para você</h2>
           <a class="btn btn-default" href="#anchorContent">Conheça os modelos</a>
         </div><!--callToAction-->
@@ -41,9 +41,9 @@
           <div class="col-md-6 col-md-offset-6 col-sm-12">
 
             <article class="boxTexto">
-              <h2>O arranjo dos seus sonhos</h2>
-              <p>Tralálála´la´la laslasdlasd alsdl asdsadlfas asdf asld flasdkjfsldkf jsjkhsl kjdhfskjh fkjshkjfhsldkfh slk dfh askh fkasd klskh k sf.</p>
-              <p>Tralálála´la´la laslasdlasd alsdl asdsadlfas asdf asld flasdkjfsldkf jsjkhsl kjdhfskjh fkjshkjfhsldkfh slk dfh askh fkasd klskh k sf.</p>
+              <h2>O buquê dos seus sonhos</h2>
+              <p>Oferecemos uma variedade de opções em flores, cores, texturas e formas para o buquê no seu grande dia.</p>
+              <p>É só imaginar e escolher o que combina mais com você.</p>
             </article>
           
           </div><!--col-->
@@ -74,7 +74,7 @@
             <img src="img/produtos/arranjos/01.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/02.jpg" rel="portfolio" title="Rosas e margaridas">
+          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/02.jpg" rel="portfolio" title="Rosas e gérberas">
             <img src="img/produtos/arranjos/02.jpg" class="img-responsive">
           </a>
 
@@ -82,7 +82,7 @@
             <img src="img/produtos/arranjos/03.jpg" class="img-responsive">
           </a>
 
-          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/04.jpg" rel="portfolio" title="Rosas dobradas">
+          <a class="mix mixAbertos fancybox" href="img/produtos/arranjos/04.jpg" rel="portfolio" title="Mix de flores">
             <img src="img/produtos/arranjos/04.jpg" class="img-responsive">
           </a>
 

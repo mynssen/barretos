@@ -44,7 +44,7 @@
               <h2>Para levar com você</h2>
               <p>Nossa linha de colares com cordão em couro ecológico ou metálico, são compostos por pingentes de mini jardins.</p>
               <p>Um jardim para levar aonde for.</p>
-              <p>Fáceis de cuidar: Regar a cada 3 meses e quando não estiver em uso deixar em local com iluminação artificial.</p>
+              <p>Fáceis de cuidar: Regar a cada 2 meses e quando não estiver em uso deixar em local com iluminação.</p>
             </article>
           
           </div><!--col-->

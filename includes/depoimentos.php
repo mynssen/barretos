@@ -14,14 +14,14 @@
         </li>
         <li>
           <blockquote>
-            <p>Recomendo! Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. </p>
-            <p class="autor">Sandes Moraes</p>
+            <p>Adorei o meu terrário! Deixou meu escritório muito mais aconchegante.</p>
+            <p class="autor">Sandra</p>
           </blockquote>
         </li>            
         <li>
           <blockquote>
-            <p>Empresa de confiança. Executa os serviços contratados com excelência! Deixou o jardim do meu condomínio lindo. Parabéns a toda equipe da Barretos Plantas!</p>
-            <p class="autor">Sandes Moraes</p>
+            <p>Meu jardim foi totalmente transformado em um espaço de harmonia e admiração. Ótimo serviço prestado.</p>
+            <p class="autor">Mônica</p>
           </blockquote>
         </li>
       </ul>
