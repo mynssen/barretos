@@ -110,6 +110,7 @@
           <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/10.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/10.jpg" class="img-responsive"></a>
           <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/11.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/11.jpg" class="img-responsive"></a>
           <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/12.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/12.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/13.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/13.jpg" class="img-responsive"></a>
 
           <div class="gap"></div>
           <div class="gap"></div>
