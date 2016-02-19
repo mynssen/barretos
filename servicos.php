@@ -95,14 +95,21 @@
 
         <!-- //Galeria// -->
         <div id="mixitup" class="mixitup">
-          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/01.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/01.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/02.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/02.jpg" class="img-responsive"></a>
-          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/01.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/01.jpg" class="img-responsive"></a>
-          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/02.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/02.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/03.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/03.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/04.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/04.jpg" class="img-responsive"></a>
-          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/05.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/05.jpg" class="img-responsive"></a>
-          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/03.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/03.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/01.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/01.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/02.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/02.jpg" class="img-responsive"></a>
+          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/01.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/thumbs/01.jpg" class="img-responsive"></a>
+          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/02.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/thumbs/02.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/03.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/03.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/04.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/04.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/05.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/05.jpg" class="img-responsive"></a>
+          <a class="mix mixDecoracao fancybox" href="img/servicos/decoracao/03.jpg" rel="portfolio" title="Decoração floral"><img src="img/servicos/decoracao/thumbs/03.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/06.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/06.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/07.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/07.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/08.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/08.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/09.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/09.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/10.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/10.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/11.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/11.jpg" class="img-responsive"></a>
+          <a class="mix mixPaisagismo fancybox" href="img/servicos/paisagismo/12.jpg" rel="portfolio" title="Paisagismo"><img src="img/servicos/paisagismo/thumbs/12.jpg" class="img-responsive"></a>
 
           <div class="gap"></div>
           <div class="gap"></div>

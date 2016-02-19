@@ -61,54 +61,51 @@
 
         <h1>Nosso catálogo</h1>
 
-        <!-- //Filtros// -->
+        <!-- //Filtros// 
         <div class="controls mixControls">          
           <button class="filter btn btn-default" data-filter="all">Todos</button>
           <button class="filter btn btn-default" data-filter=".mixAbertos">Abertos</button>
           <button class="filter btn btn-default" data-filter=".mixFechados">Fechados</button>
-        </div>
+        </div>-->
 
         <!-- //Galeria// -->
         <div id="mixitup" class="mixitup">
           
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE01</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/01.jpg" rel="portfolio" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/01.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE02</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/02.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/02.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE03</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/03.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/03.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixAbertos fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário aberto">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">ABE04</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/04.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/04.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC01</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/05.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/05.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC02</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/06.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/06.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC03</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/07.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/07.jpg" class="img-responsive">
           </a>
-
-          <a class="mix mixFechados fancybox" href="img/portfolio/terrario01.jpg" rel="portfolio" title="Terrário fechado">
-            <img src="img/portfolio/terrario01.jpg" class="img-responsive">
-            <p class="referencia">FEC04</p>
+          <a class="mix fancybox" href="img/produtos/acessorios/08.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/08.jpg" class="img-responsive">
+          </a>
+          <a class="mix fancybox" href="img/produtos/acessorios/09.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/09.jpg" class="img-responsive">
+          </a>
+          <a class="mix fancybox" href="img/produtos/acessorios/10.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/10.jpg" class="img-responsive">
+          </a>
+          <a class="mix fancybox" href="img/produtos/acessorios/11.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/11.jpg" class="img-responsive">
+          </a>
+          <a class="mix fancybox" href="img/produtos/acessorios/12.jpg" rel="pingente" title="Pingente">
+            <img src="img/produtos/acessorios/thumbs/12.jpg" class="img-responsive">
           </a>
 
           <div class="gap"></div>
