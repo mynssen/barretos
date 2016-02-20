@@ -4,8 +4,8 @@
 
     <h1>Siga-nos</h1>
     <ul>
-      <li><a href="" target="_blank">@barretosplantas</a></li>
-      <li><a class="instagram" href="" target="_blank">/barretosplantas</a></li>
+      <li><a href="https://www.facebook.com/barretosplantas/" target="_blank">@barretosplantas</a></li>
+      <li><a class="instagram" href="https://www.instagram.com/barretosplantas/" target="_blank">/barretosplantas</a></li>
     </ul>
 
   </div><!--container-->

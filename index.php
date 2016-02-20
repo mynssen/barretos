@@ -88,7 +88,7 @@
                 <p>Desenvolvemos e executamos projetos paisagísticos sob medida, em ambientes externos ou internos. Atendemos a pedidos de empresas e particulares.</p>            
                 <h2>Decoração floral</h2>
                 <p>Casamentos, aniversários, bodas, festas, e recepções. Deixe seu evento ainda mais bonito com nossas decorações florais.</p>
-                <a class="btn btn-default">Conheça nossos serviços</a>
+                <a class="btn btn-default" href="servicos.php">Conheça nossos serviços</a>
               </article>
 
             </div><!--col-->
@@ -108,7 +108,7 @@
                 <h2>A Barreto's Plantas</h2>
                 <p>Somos uma empresa atuante no mercado verde. 
   Acreditamos na preservação e cuidado com a natureza, como forma de preservarmos a vida como um todo. </p>
-                <a class="btn btn-default">Conheça nossa história</a>
+                <a class="btn btn-default" href="sobre.php">Conheça nossa história</a>
               </article>
             
             </div><!--col-->
